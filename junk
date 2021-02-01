@@ -1,0 +1,3 @@
+<Link to="/">Home</Link>
+<Link to="/SearchPage">SearchPage</Link>
+<Link to="/Movie">Movie</Link>
