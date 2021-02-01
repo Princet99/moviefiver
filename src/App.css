@@ -1,0 +1,135 @@
+h4 {
+  padding: 0;
+  margin-bottom: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  margin: 0;
+}
+h2 {
+  margin: 15px;
+  padding: 15px 15px;
+}
+
+.header ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7532a8;
+}
+
+.header ul.topnav li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: end;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header ul.topnav li a:hover {
+  color: #34eb98;
+}
+
+.header ul.search {
+  display: block;
+  display: inline-block;
+  margin: 10px 250px;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Css for card image start here */
+.movie {
+  display: flex;
+}
+.poster {
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(5, 0, 0, 0.397);
+  border: 5px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #4632a8;
+  height: auto;
+  width: auto;
+}
+.poster .header img {
+  width: 100%;
+  height: auto;
+}
+.poster .header {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+.poster .body {
+  padding: 20px;
+  text-align: center;
+}
+/* end here */
+
+/* Drop search start */
+.drop {
+  list-style-type: none;
+  position: fixed;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  border-radius: 15px;
+  background-color: burlywood;
+  margin: 0.8% 0 0 35%;
+  overflow-y: scroll;
+  max-height: 600px;
+}
+.drop li img {
+  max-height: 30%;
+  max-width: 18%;
+  padding: 10px;
+}
+
+.pallet {
+  background-color: #e7e6e6;
+  border-radius: 5px;
+  padding: 20px;
+  height: 30vh;
+  width: 50vw;
+  overflow-y: hidden;
+  margin: 20px 10px;
+}
+
+#author_name {
+  float: right;
+  padding: 5px;
+}
+#review_content {
+  padding: 5px;
+}
+#act {
+  font-size: 20px;
+}
+#video_row {
+  padding: 30px;
+}
+#video {
+  width: 60vw;
+  height: 70vh;
+}
+.Details {
+  background-color: antiquewhite;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cc99ff;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
