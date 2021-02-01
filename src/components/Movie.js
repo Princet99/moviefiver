@@ -52,7 +52,12 @@ export const Movie = (props) => {
     `)
       .then((res) => res.json())
       .then((data) => {
-        setVideos(data.results[0].key);
+        var key = data.results[0]
+          ? data.results[0].key
+            ? data.results[0].key
+            : ""
+          : "";
+        setVideos(key);
       })
       .catch((err) => {
         throw err;
@@ -120,13 +125,13 @@ export const Movie = (props) => {
           </div>
         </div>
         {/* Details */}
-        <div class="row">
-          <div class="col-lg-12">
+        <div className="row">
+          <div className="col-lg-12">
             <h3>Details</h3>
           </div>
         </div>
-        <div class="row">
-          <table class="table table-striped text-center">
+        <div className="row">
+          <table className="table table-striped text-center">
             <tbody>
               <tr>
                 <td>Country</td>
